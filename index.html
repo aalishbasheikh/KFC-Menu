@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest KFC Deals & Offers</title>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- logo link -->
+    <link rel="icon" type="image/png" href="assets/download.png">
+    <!-- ICON LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="overflow-x-hidden m-0 p-0">
+    <header class="w-full">
+        <!-- <nav class="w-full">
+            <div class=" flex items-center p-5">
+                    <i class="fa-solid fa-bars-staggered p-2 text-xl"></i>
+                    <div class="w-[220px]">
+                    <img class="w-[28%]" src="assets/images.png" alt="">
+                    </div>
+                
+                    <div class="flex gap-4">
+                        <div>
+                            <button class="btn bg-[#f3fbfd] w-[140px] flex p-1 rounded hover:border-[red]">
+                                <img class="w-[30%] object-cover" src="assets/Delivery.793adbaa710baf75ba78.png" alt="">
+                                <span class="text-black p-2 font-bold">DELIVERY</span>
+                            </button>
+                        </div>
+                        <div>
+                               <button class="btn bg-[#f3fbfd] w-[140px] flex p-1 rounded hover:border-red-500">
+                                <img class="w-[30%] object-cover" src="assets/pickup.47bb874f83ea6acb5a47.png" alt="">
+                                <span class="text-black p-2 font-bold">PICKUP</span>
+                            </button>
+                        </div>
+                          <div>
+                               <button class="btn bg-[#f3fbfd] w-[140px] flex p-1 rounded">
+                                <img class="w-[30%] object-cover" src="assets/kfc_merch_icon.2fbdafb9a4c96d69df4a.png" alt="">
+                                <span class="text-black p-2 font-bold">MERCH</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="ms-auto">
+                        <button class="bg-[#f72c2c] shadow-xl py-1.5 px-2 rounded text-white font-semibold">LOGIN</button>
+                    </div>
+            </div>
+
+        </nav> -->
+
+        <nav class="w-full shadow-md">
+  <div class="flex items-center justify-between p-4">
+
+    <!-- Left Section -->
+    <div class="flex md:items-center md:gap-4 gap-80 ">
+      
+      <!-- Hamburger -->
+      <button id="menuBtn" class=" text-xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!-- Logo -->
+      <img class="w-[80px]" src="assets/images.png" alt="logo">
+
+    </div>
+
+    <!-- Center Menu (Desktop) -->
+    <div class="hidden md:flex gap-4">
+
+      <!-- Button -->
+      <button class="flex items-center gap-2 bg-[#f3fbfd] px-3 py-2 rounded hover:border hover:border-red-500 transition">
+        <img class="w-[30px]" src="assets/Delivery.793adbaa710baf75ba78.png" alt="">
+        <span class="font-bold">DELIVERY</span>
+      </button>
+
+      <button class="flex items-center gap-2 bg-[#f3fbfd] px-3 py-2 rounded hover:border hover:border-red-500 transition">
+        <img class="w-[30px]" src="assets/pickup.47bb874f83ea6acb5a47.png" alt="">
+        <span class="font-bold">PICKUP</span>
+      </button>
+
+      <button class="flex items-center gap-2 bg-[#f3fbfd] px-3 py-2 rounded hover:border hover:border-red-500 transition">
+        <img class="w-[30px]" src="assets/kfc_merch_icon.2fbdafb9a4c96d69df4a.png" alt="">
+        <span class="font-bold">MERCH</span>
+      </button>
+
+    </div>
+
+    <!-- Login Button -->
+    <button class="hidden md:block bg-[#f72c2c] px-4 py-2 rounded text-white font-semibold hover:bg-red-600 transition">
+      LOGIN
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden flex-col gap-3 p-4 md:hidden">
+
+    <button class="flex items-center gap-2 bg-[#f3fbfd] p-2 rounded">
+      <img class="w-[30px]" src="assets/Delivery.793adbaa710baf75ba78.png">
+      DELIVERY
+    </button>
+
+    <button class="flex items-center gap-2 bg-[#f3fbfd] p-2 rounded">
+      <img class="w-[30px]" src="assets/pickup.47bb874f83ea6acb5a47.png">
+      PICKUP
+    </button>
+
+    <button class="flex items-center gap-2 bg-[#f3fbfd] p-2 rounded">
+      <img class="w-[30px]" src="assets/kfc_merch_icon.2fbdafb9a4c96d69df4a.png">
+      MERCH
+    </button>
+
+    <button class="bg-[#f72c2c] px-4 py-2 rounded text-white font-semibold">
+      LOGIN
+    </button>
+
+  </div>
+</nav>
+<!-- <div class="relative w-screen h-[500px] bg-[url('/assets/356cc7f0-b1d4-11f0-a11e-dfd9b60dad48-App-Banner-&-Web_desktop_image-2025-10-25185543.jpg')] bg-cover bg-center"></div> -->
+ <div class="relative w-full overflow-hidden">
+
+  <!-- Slides -->
+  <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+    
+    <img src="assets/banner.jpg" 
+         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
+
+    <img src="assets/banner2.jpg" 
+         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
+
+    <img src="assets/banner3.jpg" 
+         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
+
+  <img src="assets/banner4.jpg" 
+         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
+  </div>
+
+  <!-- Left Button -->
+  <button onclick="prevSlide()" 
+    class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 md:px-3 py-1 md:py-2 rounded-full">
+    ❮
+  </button>
+
+  <!-- Right Button -->
+  <button onclick="nextSlide()" 
+    class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 md:px-3 py-1 md:py-2 rounded-full">
+    ❯
+  </button>
+
+</div>
+<script>
+let index = 0;
+const slider = document.getElementById("slider");
+const totalSlides = slider.children.length;
+
+function updateSlider() {
+  slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+  index = (index + 1) % totalSlides;
+  updateSlider();
+}
+
+function prevSlide() {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateSlider();
+}
+</script>
+    </header>
+    <div class="flex justify-center mt-8 mb-4">
+    <button class="bg-[red] text-white text-xl font-bold md:px-64 sm:px-48 px-32 py-2 rounded uppercase">Recorder</button>
+    </div>
+</body>
+</html>
