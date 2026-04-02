@@ -19,40 +19,8 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body class="overflow-x-hidden m-0 p-0">
-    <header class="w-full">
-        <!-- <nav class="w-full">
-            <div class=" flex items-center p-5">
-                    <i class="fa-solid fa-bars-staggered p-2 text-xl"></i>
-                    <div class="w-[220px]">
-                    <img class="w-[28%]" src="assets/images.png" alt="">
-                    </div>
-                
-                    <div class="flex gap-4">
-                        <div>
-                            <button class="btn bg-[#f3fbfd] w-[140px] flex p-1 rounded hover:border-[red]">
-                                <img class="w-[30%] object-cover" src="assets/Delivery.793adbaa710baf75ba78.png" alt="">
-                                <span class="text-black p-2 font-bold">DELIVERY</span>
-                            </button>
-                        </div>
-                        <div>
-                               <button class="btn bg-[#f3fbfd] w-[140px] flex p-1 rounded hover:border-red-500">
-                                <img class="w-[30%] object-cover" src="assets/pickup.47bb874f83ea6acb5a47.png" alt="">
-                                <span class="text-black p-2 font-bold">PICKUP</span>
-                            </button>
-                        </div>
-                          <div>
-                               <button class="btn bg-[#f3fbfd] w-[140px] flex p-1 rounded">
-                                <img class="w-[30%] object-cover" src="assets/kfc_merch_icon.2fbdafb9a4c96d69df4a.png" alt="">
-                                <span class="text-black p-2 font-bold">MERCH</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="ms-auto">
-                        <button class="bg-[#f72c2c] shadow-xl py-1.5 px-2 rounded text-white font-semibold">LOGIN</button>
-                    </div>
-            </div>
-
-        </nav> -->
+    <header class="w-full bg-[#e4e8ea]">
+        
 
         <nav class="w-full shadow-md">
   <div class="flex items-center justify-between p-4">
@@ -131,51 +99,116 @@
     <img src="assets/banner.jpg" 
          class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
 
-    <img src="assets/banner2.jpg" 
-         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
-
-    <img src="assets/banner3.jpg" 
-         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
-
-  <img src="assets/banner4.jpg" 
-         class="w-full h-[180px] md:h-[350px] lg:h-[450px] object-cover flex-shrink-0">
+ 
   </div>
 
-  <!-- Left Button -->
-  <button onclick="prevSlide()" 
-    class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 md:px-3 py-1 md:py-2 rounded-full">
-    ❮
-  </button>
-
-  <!-- Right Button -->
-  <button onclick="nextSlide()" 
-    class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white px-2 md:px-3 py-1 md:py-2 rounded-full">
-    ❯
-  </button>
-
-</div>
-<script>
-let index = 0;
-const slider = document.getElementById("slider");
-const totalSlides = slider.children.length;
-
-function updateSlider() {
-  slider.style.transform = `translateX(-${index * 100}%)`;
-}
-
-function nextSlide() {
-  index = (index + 1) % totalSlides;
-  updateSlider();
-}
-
-function prevSlide() {
-  index = (index - 1 + totalSlides) % totalSlides;
-  updateSlider();
-}
-</script>
-    </header>
-    <div class="flex justify-center mt-8 mb-4">
-    <button class="bg-[red] text-white text-xl font-bold md:px-64 sm:px-48 px-28 py-2 rounded uppercase">Recorder</button>
+  
+  
+  
+    <div class="flex justify-center mt-8 mb-4 ">
+    <button class="bg-[red] shadow-lg shadow-gray-300 text-white text-xl font-bold md:px-64 sm:px-48 px-28 py-2 rounded uppercase">Reorder</button>
     </div>
+      </header>
+     <main>
+      <section  class="justify-center items-center relative w-full bg-[#e4e8ea]">
+<div class="relative  md:top-20 top-2 lg:ms-12 md:ms-8 ms-2">
+<h1 class="md:text-[27px] mb-2 text-[#000000] font-extrabold inline-block pb-2"
+style="background: conic-gradient(#e51e1e 35%, #ebecef 0) bottom / 100% 4px no-repeat;">
+EXPLORE MENU
+</h1>
+</div>
+<div class="  pt-4  flex overflow-x-auto  overflow-visible  md:mt-16  ">
+      
+            <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10  mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/Promotion.png" alt="">
+              </div>
+              <div class="card-body">
+              
+               <h1 class="text-md text-center  mb-2 text-[#000000]  pb-2"
+style="background: conic-gradient(#f94646 100%, #ebecef 0) bottom / 25% 4px no-repeat;">
+Promotion
+</h1>
+              </div>
+            </div>
+                <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10  mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/Everyday value.png" alt="">
+              </div>
+              <div class="card-body">
+                          <h1 class="text-md text-center  mb-2 text-[#000000]  pb-2"
+style="background: conic-gradient(#f94646 100%, #ebecef 0) bottom / 25% 4px no-repeat;">Everyday Value</h1>
+                 
+              </div>
+            </div>
+                   <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10   mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/Al-carte.png" alt="">
+              </div>
+              <div class="card-body">
+              
+                               <h1 class="text-md text-center  mb-2 text-[#000000]  pb-2"
+style="background: conic-gradient(#f94646  100%, #ebecef 0) bottom / 25% 4px no-repeat;">Al-Carte-&-Combos</h1>
+                 
+              </div>
+            </div>
+               <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10  mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/Signature-box.png" alt="">
+              </div>
+              <div class="card-body">
+              
+                             <h1 class="text-md text-center  mb-2 text-[#000000]  pb-2"
+style="background: conic-gradient(#f94646  100%, #ebecef 0) bottom / 25% 4px no-repeat;">Signature-Boxes</h1>
+                 
+              </div>
+            </div>
+               <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10   mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/Sharing.png" alt="">
+              </div>
+              <div class="card-body">
+              
+                          <h1 class="text-md text-center  mb-2 text-[#000000]  pb-2"
+style="background: conic-gradient(#f94646 100%, #ebecef 0) bottom / 25% 4px no-repeat;">Sharing</h1>
+                 
+              </div>
+            </div>
+               <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10 mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/snacks.png" alt="">
+              </div>
+              <div class="card-body">
+              
+                          <h1 class="text-md text-center  mb-2 text-[#000000]  pb-2"
+style="background: conic-gradient(#f94646 100%, #ebecef 0) bottom / 25% 4px no-repeat;">Snacks-&-Bevereges</h1>
+                 
+              </div>
+            </div>
+             <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10  mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/Condiments.png" alt="">
+              </div>
+              <div class="card-body">
+              
+                         <h1 class="text-md text-center  mb-2 text-[#000000] pb-2"
+style="background: conic-gradient(#f94646  100%, #ebecef 0) bottom / 25% 4px no-repeat;">Condiments</h1>
+                 
+              </div>
+            </div>
+                <div class="card min-w-[200px] ms-1.5  mt-8 rounded-full bg-white py-12 px-0  lg:ms-10   mb-3 pt-3 ps-2 hover:scale-[1.02] ">
+              <div class="card-img h-[150px] w-25 flex justify-center">
+                <img class="h-[99%]" src="assets/ee7b82c0-781a-11f0-a0e6-275ef3706e5f-MidnightDeal3GT-2025-08-13075551.png" alt="">
+              </div>
+              <div class="card-body">
+              
+                             <h1 class="text-md text-center  mb-2 text-[#000000] pb-2"
+style="background: conic-gradient(#f94646  100%, #ebecef 0) bottom / 25% 4px no-repeat;">Midnight(Start at 12am)</h1>
+                 
+              </div>
+            </div>
+            </div>
+      </section>
+    </main>
 </body>
 </html>
